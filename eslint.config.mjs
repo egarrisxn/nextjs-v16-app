@@ -11,7 +11,9 @@ const eslintConfig = defineConfig([
   // 3. Custom Rules (Equivalent to your old compat.config rules)
   {
     rules: {
+      "@next/next/no-img-element": "off",
       "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-unused-vars": "off",
     },
   },
   // 4. Overriding default ignores of eslint-config-next

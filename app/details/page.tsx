@@ -1,16 +1,16 @@
 import { SsgoiTransition } from "@ssgoi/react";
 // import { AnimatedHeading } from "@/components/ui/animated-heading";
 
-export default function Home() {
+export default function DetailsPage() {
   return (
-    <SsgoiTransition id='/'>
+    <SsgoiTransition id='/details'>
       <main>
-        <h1>Home Page</h1>
+        <h1>Details Page</h1>
       </main>
     </SsgoiTransition>
-    // <SsgoiTransition id='/about'>
+    // <SsgoiTransition id='/details'>
     //   <main className='flex min-h-screen w-full flex-col items-center justify-center bg-black p-4'>
-    //     <AnimatedHeading text='SWAYBAE' />
+    //     <AnimatedHeading text='DETAILS' />
     //   </main>
     // </SsgoiTransition>
   );

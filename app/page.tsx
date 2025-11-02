@@ -1,17 +1,10 @@
-import { SsgoiTransition } from "@ssgoi/react";
-// import { AnimatedHeading } from "@/components/ui/animated-heading";
+// import { TestEffect } from "@/components/test-react-effect";
 
 export default function Home() {
   return (
-    <SsgoiTransition id='/'>
-      <main>
-        <h1>Home Page</h1>
-      </main>
-    </SsgoiTransition>
-    // <SsgoiTransition id='/about'>
-    //   <main className='flex min-h-screen w-full flex-col items-center justify-center bg-black p-4'>
-    //     <AnimatedHeading text='SWAYBAE' />
-    //   </main>
-    // </SsgoiTransition>
+    <div>
+      <h1>Home Page</h1>
+      {/* <TestEffect /> */}
+    </div>
   );
 }

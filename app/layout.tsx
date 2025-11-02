@@ -2,7 +2,6 @@ import "./globals.css";
 import type { ReactNode } from "react";
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { ViewTransitionProvider } from "@/providers/view-transition";
 import { ThemeProvider } from "@/providers/theme";
 import Navbar from "@/components/navbar";
 
@@ -38,17 +37,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
-        <ViewTransitionProvider>
-          <ThemeProvider
-            attribute='class'
-            defaultTheme='system'
-            enableSystem
-            // disableTransitionOnChange
-          >
-            <Navbar />
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          <main className='mx-auto grid min-h-screen w-full place-items-center'>
             {children}
-          </ThemeProvider>
-        </ViewTransitionProvider>
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -23,6 +23,7 @@
     }
   },
   "include": [
+    "eslint.config.*",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",

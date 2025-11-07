@@ -3,6 +3,19 @@
 This is my little test app. <br/>
 Currently, I am playing with:
 
+## SENTRY.IO
+
+`pnpm dlx @sentry/wizard@latest -i nextjs --saas --org egxodev --project javascript-nextjs`
+
+Start your development server and visit /sentry-example-page if you have set it up. Click the button to trigger a test error.
+Or, trigger a sample error by calling a function that does not exist somewhere in your application.
+
+```
+myUndefinedFunction();
+```
+
+If you see an issue in your Sentry Issues, you have successfully set up Sentry with Next.js.
+
 ## REACT COMPILER
 
 ```

@@ -9,6 +9,7 @@ export default function Navbar() {
         <Link href='/about'>About</Link>
         <Link href='/list'>List</Link>
         <Link href='/details'>Details</Link>
+        <Link href='/sentry-example-page'>Sentry Example Page</Link>
       </nav>
     </header>
   );
